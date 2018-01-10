@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnSixMonthLow = new System.Windows.Forms.Button();
             this.btnOneYearLow = new System.Windows.Forms.Button();
+            this.btnHighVolume = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOneWkHigh
@@ -173,11 +174,22 @@
             this.btnOneYearLow.UseVisualStyleBackColor = true;
             this.btnOneYearLow.Click += new System.EventHandler(this.btnOneYearLow_Click);
             // 
+            // btnHighVolume
+            // 
+            this.btnHighVolume.Location = new System.Drawing.Point(47, 231);
+            this.btnHighVolume.Name = "btnHighVolume";
+            this.btnHighVolume.Size = new System.Drawing.Size(130, 27);
+            this.btnHighVolume.TabIndex = 15;
+            this.btnHighVolume.Text = "button4";
+            this.btnHighVolume.UseVisualStyleBackColor = true;
+            this.btnHighVolume.Click += new System.EventHandler(this.btnHighVolume_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 370);
+            this.Controls.Add(this.btnHighVolume);
             this.Controls.Add(this.btnOneYearLow);
             this.Controls.Add(this.btnSixMonthLow);
             this.Controls.Add(this.button1);
@@ -213,6 +225,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSixMonthLow;
         private System.Windows.Forms.Button btnOneYearLow;
+        private System.Windows.Forms.Button btnHighVolume;
     }
 }
 

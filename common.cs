@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Test_Web
@@ -25,5 +26,12 @@ namespace Test_Web
 
         public static string SixMonthLow = "http://www.topstockresearch.com/StockLowsReport/SixMonthLowReport.html";
         public static string OneYearLow = "http://www.topstockresearch.com/StockLowsReport/OneYearLowReport.html";
+
+        public static string HighVolume = "http://www.topstockresearch.com/AdvanceBullishReports/PriceRiseWithJumpInVolume.html";
+
+        public static string RemoveSpecialCharacters(string str)
+        {
+            return Regex.Replace(str, "[^a-zA-Z0-9_.]+", "", RegexOptions.Compiled);
+        }
     }
 }

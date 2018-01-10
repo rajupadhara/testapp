@@ -35,15 +35,33 @@ namespace Test_Web
         DataTable dtSixMonthLow;
         DataTable dtOneYearLow;
 
+        DataTable dtHighVolume;
+
         private void Form1_Load(object sender, EventArgs e)
         {
            
         }
 
+        private void WriteFileFromDataTable(DataTable tbl, string fileName)
+        {
+            DataTable dtResult = dtHighVolume.Clone();
+            foreach (DataRow dRow in dtHighVolume.Rows)
+            {
+                var oRows = tbl.Select("Name = '" + dRow["Name"].ToString() + "'");
+                foreach (var iRow in oRows)
+                {
+                    dtResult.ImportRow(iRow);
+                }
+            }
+            var wb = new XLWorkbook();
+            wb.Worksheets.Add(dtResult, fileName);
+            wb.SaveAs(fileName + ".xlsx");
+        }
+
         private DataTable  FillData(string webUrl)
         {
             var web = new HtmlWeb();
-            var doc = web.Load(common.OneWkHigh);
+            var doc = web.Load(webUrl);
             var table = doc.DocumentNode.SelectNodes("//table").Last();
             var thead = table.SelectNodes("thead/tr/th");
             var dt = new DataTable();
@@ -61,7 +79,7 @@ namespace Test_Web
                 var dRow = dt.NewRow();
                 foreach (var td in tdCollections)
                 {
-                    dRow[i] = td.InnerText.Trim();
+                    dRow[i] = common.RemoveSpecialCharacters(td.InnerText.Trim());
                     i++;
                 }
                 dt.Rows.Add(dRow);
@@ -101,9 +119,28 @@ namespace Test_Web
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var wb = new XLWorkbook();
-            wb.Worksheets.Add(dtOneYearHigh, "WorksheetName");
-            wb.SaveAs("test.xlsx");
+            WriteFileFromDataTable(dtOneWkHigh, "OneWeek");
+            WriteFileFromDataTable(dtTwoWkHigh, "TwoWeek");
+            WriteFileFromDataTable(dtOneMonthHigh, "OneMonth");
+            WriteFileFromDataTable(dtThreeMonthHigh, "ThreeMonth");
+            WriteFileFromDataTable(dtSixMonthHigh, "SixMonth");
+            WriteFileFromDataTable(dtOneYearHigh, "YearHigh");
+
+
+            //DataTable dtResult = dtHighVolume.Clone();
+            //foreach(DataRow dRow in dtHighVolume.Rows)
+            //{
+            //    var oRows = dtOneWkHigh.Select("Name = '" + dRow["Name"].ToString() + "'");
+            //    foreach(var iRow in oRows)
+            //    {
+            //        dtResult.ImportRow(iRow);
+            //    }                
+            //}
+            //var wb = new XLWorkbook();
+            //wb.Worksheets.Add(dtResult, "WorksheetName");
+            //wb.SaveAs("OneWeek.xlsx");
+
+
         }
 
         private void btnOneWkLow_Click(object sender, EventArgs e)
@@ -134,6 +171,11 @@ namespace Test_Web
         private void btnOneYearLow_Click(object sender, EventArgs e)
         {
             dtOneYearLow = FillData(common.OneYearLow);
+        }
+
+        private void btnHighVolume_Click(object sender, EventArgs e)
+        {
+            dtHighVolume = FillData(common.HighVolume);
         }
     }
 

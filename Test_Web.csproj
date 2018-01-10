@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClosedXML, Version=0.90.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
-      <HintPath>..\packages\ClosedXML.0.90.0\lib\net452\ClosedXML.dll</HintPath>
+      <HintPath>packages\ClosedXML.0.90.0\lib\net452\ClosedXML.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
@@ -46,7 +46,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.6.13.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.6.13\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <HintPath>packages\HtmlAgilityPack.1.6.13\lib\Net45\HtmlAgilityPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -94,6 +94,28 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="packages\ClosedXML.0.90.0\ClosedXML.0.90.0.nupkg" />
+    <None Include="packages\DocumentFormat.OpenXml.2.7.2\DocumentFormat.OpenXml.2.7.2.nupkg" />
+    <None Include="packages\FastMember.Signed.1.1.0\FastMember.Signed.1.1.0.nupkg" />
+    <None Include="packages\HtmlAgilityPack.1.6.13\HtmlAgilityPack.1.6.13.nupkg" />
+    <None Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.3\HtmlAgilityPack.deps.json" />
+    <None Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.6\HtmlAgilityPack.deps.json" />
+    <None Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard2.0\HtmlAgilityPack.deps.json" />
+    <None Include="packages\HtmlAgilityPack.1.6.13\lib\uap10.0\HtmlAgilityPack.pri" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\MonoTouch10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\xamarinios10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\xamarinmac20\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\xamarintvos10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\MonoTouch10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\xamarinios10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\xamarinmac20\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\xamarintvos10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.IO.FileSystem.Primitives.4.0.1\System.IO.FileSystem.Primitives.4.0.1.nupkg" />
+    <None Include="packages\System.IO.Packaging.4.0.0\System.IO.Packaging.4.0.0.nupkg" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,6 +128,77 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\ClosedXML.0.90.0\lib\net452\ClosedXML.dll" />
+    <Content Include="packages\ClosedXML.0.90.0\lib\net452\ClosedXML.pdb" />
+    <Content Include="packages\ClosedXML.0.90.0\lib\net452\ClosedXML.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\net35\DocumentFormat.OpenXml.dll" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\net35\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\netstandard1.3\DocumentFormat.OpenXml.dll" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.7.2\lib\netstandard1.3\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\FastMember.Signed.1.1.0\lib\net35\FastMember.Signed.dll" />
+    <Content Include="packages\FastMember.Signed.1.1.0\lib\net40\FastMember.Signed.dll" />
+    <Content Include="packages\FastMember.Signed.1.1.0\lib\netstandard1.3\FastMember.Signed.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net20\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net20\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net20\HtmlAgilityPack.xml" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net40-client\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net40-client\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net40-client\HtmlAgilityPack.xml" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net40\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net40\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net40\HtmlAgilityPack.XML" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net45\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net45\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\Net45\HtmlAgilityPack.XML" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\NetCore45\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\NetCore45\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\NetCore45\HtmlAgilityPack.XML" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.3\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.3\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.3\HtmlAgilityPack.xml" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.6\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.6\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard1.6\HtmlAgilityPack.xml" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard2.0\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard2.0\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\netstandard2.0\HtmlAgilityPack.xml" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\portable-net45+netcore45+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\portable-net45+netcore45+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\portable-net45+netcore45+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.XML" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.XML" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\uap10.0\HtmlAgilityPack.dll" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\uap10.0\HtmlAgilityPack.pdb" />
+    <Content Include="packages\HtmlAgilityPack.1.6.13\lib\uap10.0\HtmlAgilityPack.XML" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\dotnet_library_license.txt" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\lib\netstandard1.3\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\net46\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\de\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\es\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\fr\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\it\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\ja\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\ko\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\ru\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\zh-hans\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ref\netstandard1.3\zh-hant\System.IO.FileSystem.Primitives.xml" />
+    <Content Include="packages\System.IO.FileSystem.Primitives.4.0.1\ThirdPartyNotices.txt" />
+    <Content Include="packages\System.IO.Packaging.4.0.0\dotnet_library_license.txt" />
+    <Content Include="packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll" />
+    <Content Include="packages\System.IO.Packaging.4.0.0\lib\netstandard1.3\System.IO.Packaging.dll" />
+    <Content Include="packages\System.IO.Packaging.4.0.0\ref\net46\System.IO.Packaging.dll" />
+    <Content Include="packages\System.IO.Packaging.4.0.0\ref\netstandard1.3\System.IO.Packaging.dll" />
+    <Content Include="packages\System.IO.Packaging.4.0.0\ThirdPartyNotices.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
